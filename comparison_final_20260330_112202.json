@@ -1,0 +1,22 @@
+[
+  {
+    "name": "random",
+    "test_cases": 9,
+    "passed": 6,
+    "failed": 3,
+    "total_lines": 36,
+    "covered_lines": 18,
+    "missing_lines": 18,
+    "coverage": 50.0
+  },
+  {
+    "name": "rule",
+    "test_cases": 9,
+    "passed": 5,
+    "failed": 4,
+    "total_lines": 36,
+    "covered_lines": 15,
+    "missing_lines": 21,
+    "coverage": 41.66666666666667
+  }
+]
