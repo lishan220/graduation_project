@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API测试报告</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .summary { background: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .pass { color: green; }
+        .fail { color: red; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .detail { max-width: 300px; overflow: auto; }
+        .status-pass { background-color: #d4edda; }
+        .status-fail { background-color: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>API自动化测试报告</h1>
+    <div class="summary">
+        <p><strong>生成时间:</strong> 2026-03-30 11:17:49</p>
+        <p><strong>总用例数:</strong> 9</p>
+        <p><strong>通过:</strong> <span class="pass">0</span> (0.0%)</p>
+        <p><strong>失败:</strong> <span class="fail">9</span> (100.0%)</p>
+    </div>
+    
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>描述</th>
+            <th>方法</th>
+            <th>URL</th>
+            <th>期望状态</th>
+            <th>实际状态</th>
+            <th>耗时(秒)</th>
+            <th>状态</th>
+            <th>详情</th>
+        </tr>
+        
+        <tr class="status-fail">
+            <td>1</td>
+            <td>POST /users - exception test</td>
+            <td>POST</td>
+            <td>http://localhost:5000/users</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.080</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>2</td>
+            <td>POST /users - exception test</td>
+            <td>POST</td>
+            <td>http://localhost:5000/users</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.045</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>3</td>
+            <td>POST /users - exception test</td>
+            <td>POST</td>
+            <td>http://localhost:5000/users</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.079</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>4</td>
+            <td>GET /users/{id} - boundary test</td>
+            <td>GET</td>
+            <td>http://localhost:5000/users/999999</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.094</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>5</td>
+            <td>GET /users/{id} - normal test</td>
+            <td>GET</td>
+            <td>http://localhost:5000/users/1</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.069</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>6</td>
+            <td>GET /users/{id} - boundary test</td>
+            <td>GET</td>
+            <td>http://localhost:5000/users/999999</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.051</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>7</td>
+            <td>DELETE /users/{id} - boundary test</td>
+            <td>DELETE</td>
+            <td>http://localhost:5000/users/999999</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.083</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>8</td>
+            <td>DELETE /users/{id} - normal test</td>
+            <td>DELETE</td>
+            <td>http://localhost:5000/users/1</td>
+            <td>204</td>
+            <td>ERROR</td>
+            <td>4.025</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+        <tr class="status-fail">
+            <td>9</td>
+            <td>DELETE /users/{id} - boundary test</td>
+            <td>DELETE</td>
+            <td>http://localhost:5000/users/999999</td>
+            <td>200</td>
+            <td>ERROR</td>
+            <td>4.081</td>
+            <td>❌</td>
+            <td class="detail">错误: Connection Error</td>
+        </tr>
+    </table>
+</body>
+</html>
