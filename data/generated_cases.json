@@ -1,0 +1,303 @@
+[
+  {
+    "description": "POST /users - exception test",
+    "case_type": "exception",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "normal"
+      },
+      "field_suggestions": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "/users",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "normal"
+  },
+  {
+    "description": "POST /users - exception test",
+    "case_type": "exception",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "normal"
+      },
+      "field_suggestions": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "/users",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "boundary"
+  },
+  {
+    "description": "POST /users - exception test",
+    "case_type": "exception",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "normal"
+      },
+      "field_suggestions": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "/users",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {
+        "需要username": null,
+        "和age": 1002
+      }
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "exception"
+  },
+  {
+    "description": "GET /users/{id} - boundary test",
+    "case_type": "boundary",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "boundary"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "GET",
+      "url": "/users/999999",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "normal"
+  },
+  {
+    "description": "GET /users/{id} - normal test",
+    "case_type": "normal",
+    "model_analysis": {
+      "extracted_params": {
+        "detected_type_hint": "normal"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "GET",
+      "url": "/users/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "id": 1,
+        "username": "preloaded",
+        "age": 30
+      }
+    },
+    "_case_type": "boundary"
+  },
+  {
+    "description": "GET /users/{id} - boundary test",
+    "case_type": "boundary",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "boundary"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "GET",
+      "url": "/users/999999",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "exception"
+  },
+  {
+    "description": "DELETE /users/{id} - boundary test",
+    "case_type": "boundary",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "boundary"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "DELETE",
+      "url": "/users/999999",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "normal"
+  },
+  {
+    "description": "DELETE /users/{id} - normal test",
+    "case_type": "normal",
+    "model_analysis": {
+      "extracted_params": {
+        "detected_type_hint": "normal"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "DELETE",
+      "url": "/users/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 204,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "_case_type": "boundary"
+  },
+  {
+    "description": "DELETE /users/{id} - boundary test",
+    "case_type": "boundary",
+    "model_analysis": {
+      "extracted_params": {
+        "suggested_status": 200,
+        "detected_type_hint": "boundary"
+      },
+      "field_suggestions": {}
+    },
+    "request": {
+      "method": "DELETE",
+      "url": "/users/999999",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "query": {},
+      "body": {}
+    },
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "error": "Invalid request",
+        "code": "VALIDATION_ERROR"
+      }
+    },
+    "_case_type": "exception"
+  }
+]
